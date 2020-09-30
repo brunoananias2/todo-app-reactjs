@@ -14,7 +14,7 @@ export default class Main extends React.Component {
   };
 
   componentDidMount() {
-    fetch("http://todo-brunoananias.herokuapp.com/api/todo")
+    fetch("https://todo-brunoananias.herokuapp.com/api/todo")
       .then((res) => res.json())
       .then((res) => {
         this.setState({
@@ -32,7 +32,7 @@ export default class Main extends React.Component {
     task.completed ? tasks.push(task) : tasks.unshift(task);
     this.setState({ tasks: tasks });
 
-    fetch("http://todo-brunoananias.herokuapp.com/api/todo/" + task.id, {
+    fetch("https://todo-brunoananias.herokuapp.com/api/todo/" + task.id, {
       method: "PUT",
       body: JSON.stringify({
         completed: task.completed
@@ -49,7 +49,7 @@ export default class Main extends React.Component {
     const task = tasks[idx];
     task.title = value;
     this.setState({ tasks: tasks });
-    fetch("http://todo-brunoananias.herokuapp.com/api/todo/" + task.id, {
+    fetch("https://todo-brunoananias.herokuapp.com/api/todo/" + task.id, {
       method: "PUT",
       body: JSON.stringify({
         title: task.title
@@ -67,7 +67,7 @@ export default class Main extends React.Component {
     console.log(task);
     this.setState({ tasks: tasks });
 
-    fetch('http://todo-brunoananias.herokuapp.com/api/todo/' + task.id, {
+    fetch('https://todo-brunoananias.herokuapp.com/api/todo/' + task.id, {
       method: "DELETE",
     })
       .then(res => res.json()) // or res.json()
@@ -82,7 +82,7 @@ export default class Main extends React.Component {
     const newtask = { title: title, completed: false };
     const newtasks = [newtask, ...this.state.tasks];
     this.setState({ tasks: newtasks });
-    fetch("http://todo-brunoananias.herokuapp.com/api/todo", {
+    fetch("https://todo-brunoananias.herokuapp.com/api/todo", {
       method: "POST",
       body: JSON.stringify(newtask),
       headers: {
