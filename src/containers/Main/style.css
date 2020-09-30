@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: rgb(74,175,244);
+  background: radial-gradient(circle, rgba(74,175,244,1) 35%, rgba(74,67,244,1) 100%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 160px;
+  background: url(https://static-cdn.jtvnw.net/jtv_user_pictures/48bb47fa-b641-41fb-ad08-a0d6560f2659-profile_banner-480.jpeg)
+    center;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+.app {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.wrapper {
+  height: calc(100vh - 100px);
+  background: rgb(74,175,244);
+  background: radial-gradient(circle, rgba(74,175,244,1) 35%, rgba(74,67,244,1) 100%);
+  padding: 50px;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.list {
+  height: calc(100vh - 350px);
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    height: 100px;
+  }
+  .wrapper {
+    height: calc(100vh - 40px);
+    padding: 20px;
+  }
+  .settings {
+    flex-flow: column;
+    margin: 10px 0;
+  }
+}

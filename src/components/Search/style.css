@@ -1,0 +1,26 @@
+.search {
+  width: 45%;
+}
+
+.search input[type="text"] {
+  width: 100%;
+  height: 35px;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 16px;
+}
+
+.search input[type="text"]:hover,
+.search input[type="text"]:focus {
+  border-bottom: 1px solid #000000;
+}
+
+@media screen and (max-width: 500px) {
+  .search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .search input[type="text"] {
+    width: 100%;
+    text-align: center;
+  }
+}

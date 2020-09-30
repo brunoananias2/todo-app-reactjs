@@ -1,0 +1,84 @@
+.add {
+  position: absolute;
+  z-index: 1;
+  bottom: -25px;
+  right: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #009933;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.add:hover {
+  background: #00cc44;
+}
+.add.active {
+  background: #006622;
+}
+
+.add svg {
+  width: 20px;
+}
+
+.add path {
+  fill: #ffffff;
+}
+
+.formAdd {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #ffffff;
+  box-sizing: border-box;
+  padding: 30px 20px 10px;
+  margin: 0 auto;
+}
+
+.formAdd input[type="text"] {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.formAdd button {
+  display: inline-block;
+  background: #009933;
+  color: #ffffff;
+  font-size: 20px;
+  border: 0;
+  box-sizing: border-box;
+  padding: 7px 40px;
+  margin: 10px 0 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.formAdd button:hover {
+  background: #00cc44;
+}
+.formAdd button:focus {
+  background: #006622;
+}
+.formAdd button:disabled {
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 500px) {
+  .add {
+    bottom: -60px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}

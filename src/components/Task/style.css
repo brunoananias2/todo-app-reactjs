@@ -1,0 +1,160 @@
+.taskContent {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+p {
+  margin: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+label.active .taskCheckImg {
+  border: 2px solid #009933;
+  animation: anim2 2s ease;
+}
+label.active .taskCheckImg svg {
+  opacity: 1;
+}
+label.active p {
+  color: #8b939b;
+  text-decoration: line-through;
+}
+
+.taskCheckImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  border: 2px solid #f44336;
+  border-radius: 100%;
+  margin-right: 10px;
+  animation: anim 2s ease;
+}
+
+.taskCheckImg svg {
+  width: 15px;
+  height: 15px;
+  opacity: 0;
+  fill: #009933;
+  transition: 0.5s;
+}
+
+@keyframes anim {
+  0% {
+    border-color: #009933;
+  }
+  25% {
+    border-top-color: #f44336;
+  }
+  50% {
+    border-right-color: #f44336;
+  }
+  75% {
+    border-bottom-color: #f44336;
+  }
+  100% {
+    border-left-color: #f44336;
+  }
+}
+@keyframes anim2 {
+  0% {
+    border-color: #f44336;
+  }
+  25% {
+    border-top-color: #009933;
+  }
+  50% {
+    border-right-color: #009933;
+  }
+  75% {
+    border-bottom-color: #009933;
+  }
+  100% {
+    border-left-color: #009933;
+  }
+}
+
+label p {
+  transition: 0.3s;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.edit {
+  background: #ff9800;
+}
+
+.delete {
+  background: #f44336;
+  margin-left: 10px;
+}
+
+.formEdit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 80%;
+  border: 1px solid transparent;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+  border-bottom: 1px solid #000;
+}
+
+.save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #00cc00;
+  border: 0;
+  border-radius: 100%;
+  cursor: pointer;
+  outline: none;
+}
+.save:disabled {
+  opacity: 0.5;
+}
+
+.buttons svg {
+  width: 14px;
+  height: 14px;
+}
+.buttons path {
+  fill: #ffffff;
+}
