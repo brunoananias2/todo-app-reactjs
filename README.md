@@ -2,7 +2,7 @@
 Todo App - Reactjs
 </h1>
 
-<p align="center">Deploy em <a href="https://brunoananias-todo-reactjs.herokuapp.com//"></a>.</p>
+<p align="center">Deploy no <a href="https://brunoananias-todo-reactjs.herokuapp.com/">Heroku</a>.</p>
 
 <hr>
 
