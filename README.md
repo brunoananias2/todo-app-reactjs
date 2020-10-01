@@ -6,7 +6,7 @@ Todo App - Reactjs
 
 <hr>
 
-![](https://i.imgur.com/k9p5zqL.jpg?1)
+![](https://i.imgur.com/b4WSgSH.jpg)
 
 ## Desenvolvedor
 
