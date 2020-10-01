@@ -14,7 +14,8 @@ Todo App - Reactjs
 
 [Bruno Ananias](https://github.com/brunoananias2)
 
-
+### Pré requisitos
+[NodeJs](https://nodejs.org/) instalado.
 
 ### Instalação e execução
 
